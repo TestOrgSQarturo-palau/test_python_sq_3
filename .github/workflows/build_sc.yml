@@ -16,9 +16,9 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
+        uses: SonarSource/sonarqube-scan-action@master
         with:
-            sonar.projectKey: TestOrgSQarturo-palau_test_python_sq_3
+            #sonar.projectKey: TestOrgSQarturo-palau_test_python_sq_3
             args: >
               -Dsonar.verbose=true
               -Dsonar.scanner.skipJreProvisioning=true
